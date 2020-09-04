@@ -18,16 +18,17 @@
  * @package WordPress
  */
 
-// ** MySQL settings - You can get this info from your web host ** //
-$db = parse_url($_ENV["DATABASE"]);
 /** The name of the database for WordPress */
-define('DB_NAME', trim($db["path"],"/"));
+define('DB_NAME', 'heroku_baf4ea735bba346');
+
 /** MySQL database username */
-define('DB_USER', $db["user"]);
+define('DB_USER', 'be7c9ad0b61135');
+
 /** MySQL database password */
-define('DB_PASSWORD', $db["pass"]);
+define('DB_PASSWORD', '7f39a88a');
+
 /** MySQL hostname */
-define('DB_HOST', $db["host"]);
+define('DB_HOST', 'eu-cdbr-west-03.cleardb.net');
 
 define('AUTH_KEY', getenv('AUTH_KEY'));
 define('SECURE_AUTH_KEY', getenv('SECURE_AUTH_KEY'));
