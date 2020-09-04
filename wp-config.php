@@ -25,7 +25,7 @@ define('DB_NAME', 'heroku_baf4ea735bba346');
 define('DB_USER', 'be7c9ad0b61135');
 
 /** MySQL database password */
-define('DB_PASSWORD', '7f39a88a');
+define('DB_PASSWORD', '6785256fce9d947');
 
 /** MySQL hostname */
 define('DB_HOST', 'eu-cdbr-west-03.cleardb.net');
