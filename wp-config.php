@@ -18,26 +18,42 @@
  * @package WordPress
  */
 
+// ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'heroku_baf4ea735bba346');
+define( 'DB_NAME', 'wp_ecommerce' );
 
 /** MySQL database username */
-define('DB_USER', 'be7c9ad0b61135');
+define( 'DB_USER', 'root' );
 
 /** MySQL database password */
-define('DB_PASSWORD', '6785256fce9d947');
+define( 'DB_PASSWORD', 'Scarface93390,' );
 
 /** MySQL hostname */
-define('DB_HOST', 'eu-cdbr-west-03.cleardb.net');
+define( 'DB_HOST', 'localhost' );
 
-define('AUTH_KEY', getenv('AUTH_KEY'));
-define('SECURE_AUTH_KEY', getenv('SECURE_AUTH_KEY'));
-define('LOGGED_IN_KEY', getenv('LOGGED_IN_KEY'));
-define('NONCE_KEY', getenv('NONCE_KEY'));
-define('AUTH_SALT', getenv('AUTH_SALT'));
-define('SECURE_AUTH_SALT', getenv('SECURE_AUTH_SALT'));
-define('LOGGED_IN_SALT', getenv('LOGGED_IN_SALT'));
-define('NONCE_SALT', getenv('NONCE_SALT'));
+/** Database Charset to use in creating database tables. */
+define( 'DB_CHARSET', 'utf8mb4' );
+
+/** The Database Collate type. Don't change this if in doubt. */
+define( 'DB_COLLATE', '' );
+
+/**#@+
+ * Authentication Unique Keys and Salts.
+ *
+ * Change these to different unique phrases!
+ * You can generate these using the {@link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org secret-key service}
+ * You can change these at any point in time to invalidate all existing cookies. This will force all users to have to log in again.
+ *
+ * @since 2.6.0
+ */
+define( 'AUTH_KEY',         'l#eKQgt-k=~85b+NA]h:ZRW=9.+q?P&P6lSa?hoCzsZI)6V*IN~:MZK @*(xFRSA' );
+define( 'SECURE_AUTH_KEY',  'M_g#GOjtHKrMpjp1>J##nWcpmaON-TgZ8Mhx+thW7X{|1Ac/W8@c)WAOS5cNDKG8' );
+define( 'LOGGED_IN_KEY',    'wN0!^!*B?EkJ8V omr/(Ox:U8Ay/r`8]brn}<Ss;*`H`1psrG(S?J52#Bo@CZ/^E' );
+define( 'NONCE_KEY',        'a?V~@|[RB=^NmxFGwZllsy<9*^;!#[T|13AY(c,Y6e~>+NBbL<J0#Py]f`+uoU*L' );
+define( 'AUTH_SALT',        'eKS.m2?j%{Sx3y-jpq+;D{d7.-@y)x2bRX!C|M)TbMlQ{F(M_AJIF,>OaBQVO*4J' );
+define( 'SECURE_AUTH_SALT', '};Ugk9Js:g&k^{/}|0F P&[>Q{_GJY&Fv cgYYT@}zzmBzUmp>f#OG,X9dEK#Vo@' );
+define( 'LOGGED_IN_SALT',   '+=/@d]ckn)1!?g?UbDKs:o@er@=@#fRGj:T?W-]Fm.69{=u)(0.rI?f3c,5Vk:%x' );
+define( 'NONCE_SALT',       '>8sFsVhF*]s&#4L*-s8=u1+~$+sb$u/RsH#nB6=6_?8|Jh=S4N9t2Mt7G6?:qXid' );
 
 /**#@-*/
 
